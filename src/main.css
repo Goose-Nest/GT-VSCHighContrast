@@ -1,0 +1,56 @@
+/* CSS variables for Discord */
+body {
+  --background-primary: #000000;
+  --background-secondary: #000000;
+  --background-secondary-alt: #000000;
+  --background-tertiary: #000000;
+
+  --channeltextarea-background: var(--scrollbar-auto-track);
+  --background-message-hover: var(--scrollbar-auto-track);
+
+  --background-accent: #050505;
+  --background-floating: #050505;
+
+  --scrollbar-thin-thumb: var(--brand-color-hover);
+  --scrollbar-auto-thumb: var(--brand-color-hover);
+  --scrollbar-auto-scrollbar-color-thumb: var(--brand-color-hover);
+
+  --scrollbar-auto-track: rgba(255, 255, 255, 0.03);
+  --scrollbar-auto-scrollbar-color-track: var(--scrollbar-auto-track);
+
+  --brand-color: rgb(243, 133, 24);
+  --brand-color-hover: #6fc3df;
+
+  --background-modifier-selected: var(--brand-color);
+}
+
+/* Add outlines around main elements */
+.membersWrap-2h-GB4, .title-3qD0b-, .sidebar-2K8pFh, .sidebarRegionScroller-3MXcoP, .container-3baos1, .container-3baos1 > .flex-1xMQg5, .container-1taM1r, .menu-3sdvDG, .root-1gCeng {
+  outline: 2px solid var(--brand-color-hover);
+  z-index: 99;
+}
+
+/* Selected channels are black */
+.containerDefault--pIXnN.selected-3LIHYU svg, .containerDefault--pIXnN.selected-3LIHYU .name-23GUGE {
+  color: black !important;
+}
+
+/* Normal channel names are less gray and more white */
+.name-23GUGE {
+  color: var(--interactive-normal);
+}
+
+/* Remove shine on buttons for buying some things */
+.buttonShine-1CSUM8 {
+  display: none;
+}
+
+/* Make top titlebar have a higher z-index so the outlines look better */
+.title-3qD0b- {
+  z-index: 100;
+}
+
+/* Outline to the right of guilds */
+.guilds-1SWlCJ {
+  border-right: 1px solid var(--brand-color-hover);
+}
