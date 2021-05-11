@@ -54,3 +54,13 @@ body {
 .guilds-1SWlCJ {
   border-right: 1px solid var(--brand-color-hover);
 }
+
+/* Move inbox to far left */
+.toolbar-1t6TWx > .iconWrapper-2OrFZ1.clickable-3rdHwn:nth-of-type(5) {
+  order: -1;
+}
+
+/* Color inbox as brand */
+.toolbar-1t6TWx > .iconWrapper-2OrFZ1.clickable-3rdHwn:nth-of-type(5) svg {
+  color: var(--brand-experiment);
+}
