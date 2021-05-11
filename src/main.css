@@ -21,6 +21,8 @@ body {
   --brand-color: rgb(243, 133, 24);
   --brand-color-hover: #6fc3df;
 
+  --brand-experiment: var(--brand-color);
+
   --background-modifier-selected: var(--brand-color);
 }
 
@@ -62,5 +64,15 @@ body {
 
 /* Color inbox as brand */
 .toolbar-1t6TWx > .iconWrapper-2OrFZ1.clickable-3rdHwn:nth-of-type(5) svg {
+  color: var(--brand-experiment);
+}
+
+/* Color role header groups as brand */
+.membersGroup-v9BXpm {
+  color: var(--brand-experiment);
+}
+
+/* Color activity icons as brand */
+.activityText-yGKsKm + .icon-15YQ1T {
   color: var(--brand-experiment);
 }
